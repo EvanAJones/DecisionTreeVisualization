@@ -13,7 +13,7 @@ def WriteTree(clf, feature_names,out_file,title_string='DecisonTree',rounded=Tru
     svg_string = graphs[0].create_svg().decode('UTF-8')
     html = """
     <!DOCTYPE html>
-    <html lang="en">F
+    <html lang="en">
 
     <head>
       <!--  Meta  -->
@@ -31,6 +31,7 @@ def WriteTree(clf, feature_names,out_file,title_string='DecisonTree',rounded=Tru
     body {
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     #mainViewContainer {
